@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio — Anisa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>Anisa</a>
+    <button class="navtoggle" aria-label="Buka menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7H20M4 12H20M4 17H20" stroke="#1B2340" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="portofolio.html" class="active">Portofolio</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">karya-contoh</p>
+    <h1>Portofolio</h1>
+    <p>Berikut contoh jenis proyek yang ingin saya kembangkan seiring belajar. Bagian ini bisa diganti dengan karya asli begitu sudah tersedia.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="grid">
+      <div class="work-card">
+        <div class="work-thumb t1"><span class="status">contoh</span><span class="num">01</span></div>
+        <div class="work-body">
+          <h3>Kampanye Sosial UMKM Lokal</h3>
+          <p>Konsep konten & caption untuk membantu UMKM membangun kedekatan dengan pelanggan di Instagram.</p>
+          <span class="tag">#contentwriting</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb t2"><span class="status">contoh</span><span class="num">02</span></div>
+        <div class="work-body">
+          <h3>Iklan Produk di Media Sosial</h3>
+          <p>Simulasi penyusunan iklan bertarget untuk produk lokal, lengkap dengan copy ajakan bertindak.</p>
+          <span class="tag">#socialmediaads</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb t3"><span class="status">contoh</span><span class="num">03</span></div>
+        <div class="work-body">
+          <h3>Rangkaian Caption Edukatif</h3>
+          <p>Seri caption bertema edukasi ringan untuk membangun engagement dan kepercayaan audiens.</p>
+          <span class="tag">#contentwriting</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb t4"><span class="status">contoh</span><span class="num">04</span></div>
+        <div class="work-body">
+          <h3>Content Calendar Mingguan</h3>
+          <p>Rencana konten mingguan yang memadukan tulisan dan penjadwalan iklan secara konsisten.</p>
+          <span class="tag">#socialmediaads</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 · Portofolio Anisa · Digital Marketing</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.navlinks a').forEach(l => l.addEventListener('click', () => document.getElementById('navlinks').classList.remove('open')));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak — Anisa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>Anisa</a>
+    <button class="navtoggle" aria-label="Buka menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7H20M4 12H20M4 17H20" stroke="#1B2340" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="portofolio.html">Portofolio</a></li>
+      <li><a href="kontak.html" class="active">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">hubungi-saya</p>
+    <h1>Mari terhubung</h1>
+    <p>Terbuka untuk kolaborasi, magang, atau sekadar diskusi seputar konten dan strategi digital marketing.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="label">email</span>
+        <a class="value" href="mailto:annisaaaaa56@gmail.com">annisaaaaa56@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <span class="label">whatsapp</span>
+        <a class="value" href="https://wa.me/6283159370245" target="_blank" rel="noopener">0831-5937-0245</a>
+      </div>
+      <div class="contact-cta">
+        <div>
+          <h3>Siap berkolaborasi?</h3>
+          <p>Kirim pesan langsung lewat email atau WhatsApp di atas.</p>
+        </div>
+        <a href="mailto:annisaaaaa56@gmail.com" class="btn" style="background:var(--coral); border-color:var(--coral);">Kirim Email →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 · Portofolio Anisa · Digital Marketing</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.navlinks a').forEach(l => l.addEventListener('click', () => document.getElementById('navlinks').classList.remove('open')));
+</script>
+
+</body>
+</html>
